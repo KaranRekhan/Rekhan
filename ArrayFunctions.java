@@ -54,4 +54,21 @@ class ArrayFunctions{
 			}
 			return index;
 	}
+	void arraytoArrayList(int[] array){
+		ArrayList<Integer> list = new ArrayList<>();
+		for(int i :array){
+			list.add(i);
+		}
+		displayList(list);
+	}
+	void arraylisttoArray(ArrayList<Integer> list){
+		int[] array = new int[list.size()];
+		for(int i = 0; i<list.size();i++){
+			array[i] = list.get(i);
+		}
+		display(array);
+	}
 	
+}
+
+
